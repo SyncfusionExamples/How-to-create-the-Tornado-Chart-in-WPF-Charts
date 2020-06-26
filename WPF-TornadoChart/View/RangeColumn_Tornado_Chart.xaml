@@ -17,7 +17,7 @@
     
     <Grid>
 
-        <chart:SfChart x:Name="SfChart"  Header="PASS DETAILS" FontSize="12" Width="900" Height="350">
+        <chart:SfChart x:Name="SfChart" SideBySideSeriesPlacement="False"  Header="PASS DETAILS" FontSize="12" Width="900" Height="350">
             <!--PrimaryAxis-->
             <chart:SfChart.PrimaryAxis>
                 <chart:CategoryAxis Header="Department" FontSize="12">

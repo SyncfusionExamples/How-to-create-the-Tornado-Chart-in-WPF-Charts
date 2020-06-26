@@ -23,7 +23,7 @@
     </UserControl.DataContext>
     
     <Grid>
-        <chart:SfChart x:Name="SfChart"  Header="Dry natural gas export and import for the years 2000-2010" FontSize="12" Width="900" Height="350">
+        <chart:SfChart x:Name="SfChart" SideBySideSeriesPlacement="False" Header="Dry natural gas export and import for the years 2000-2010" FontSize="12" Width="900" Height="350">
             <!--PrimaryAxis-->
             <chart:SfChart.PrimaryAxis>
                 <chart:CategoryAxis Header="Year" LabelFormat="yyyy" FontSize="12">
