@@ -18,7 +18,7 @@ Step2: By using the LabelTemplate in ChartAdornmentInfo class, you can display t
     XBindingPath="Year" Interior="LightBlue" 	Palette="None" Label=" Export" YBindingPath="Export">
 	<chart:BarSeries.AdornmentsInfo>
 		<chart:ChartAdornmentInfo AdornmentsPosition="Top" ShowLabel="True" 
-                    HorizontalAlignment="Center" VerticalAlignment="Center" 				FontSize="10">                       
+                    HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">                       
               </chart:ChartAdornmentInfo>
        </chart:BarSeries.AdornmentsInfo>
     </chart:BarSeries>
@@ -53,11 +53,12 @@ Step2: By using the LabelTemplate in ChartAdornmentInfo class, you can display t
 **XAML**
 ```
 <!--Create RangeColumnSeries and bind Models property to ItemsSource-->
-	<chart:RangeColumnSeries SideBySideSeriesPlacement="False" 		EnableAnimation="True" ItemsSource="{Binding Models}" 
-              XBindingPath="DeptName" Interior="LightBlue" IsTransposed="True" 			Palette="None" High="PassStart" Low="Pass">
+	<chart:RangeColumnSeries SideBySideSeriesPlacement="False" EnableAnimation="True" ItemsSource="{Binding Models}" 
+              XBindingPath="DeptName" Interior="LightBlue" IsTransposed="True" Palette="None" High="PassStart" Low="Pass">
             <!--To show label using ChartAdornmentInfo-->                                   
             <chart:RangeColumnSeries.AdornmentsInfo>
-                 <chart:ChartAdornmentInfo AdornmentsPosition="Bottom"  			                FontSize="10" ShowLabel="True" HorizontalAlignment="Center" 			  VerticalAlignment="Center">      
+                 <chart:ChartAdornmentInfo AdornmentsPosition="Bottom"  FontSize="10" ShowLabel="True" HorizontalAlignment="Center"
+		 VerticalAlignment="Center">      
                  </chart:ChartAdornmentInfo>
              </chart:RangeColumnSeries.AdornmentsInfo>
        </chart:RangeColumnSeries>
