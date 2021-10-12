@@ -76,3 +76,4 @@ Step2: By using the LabelTemplate in ChartAdornmentInfo class, you can display t
       </chart:RangeColumnSeries>
 ```
 
+KB article - [How-to-create-the-Tornado-Chart-in-WPF-Charts](https://www.syncfusion.com/kb/11657/how-to-create-the-tornado-chart-in-wpf-charts)
