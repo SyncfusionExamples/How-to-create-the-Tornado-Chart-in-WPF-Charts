@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="WPF_Tornado_Chart.View.RangeColumnTornadoChart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Tornado_Chart.View"
+             xmlns:chart="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
+             xmlns:viewmodel="clr-namespace:WPF_Tornado_Chart.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <viewmodel:DepartmentViewModel />
+    </UserControl.DataContext>
+
+    <Grid>
+        <chart:SfChart x:Name="SfChart" SideBySideSeriesPlacement="False"  Header="PASS DETAILS" FontSize="12" Width="900" Height="350">
+            <!--PrimaryAxis-->
+            <chart:SfChart.PrimaryAxis>
+                <chart:CategoryAxis Header="Department" FontSize="12">
+                </chart:CategoryAxis>
+            </chart:SfChart.PrimaryAxis>
+            <!--SecondaryAxis-->
+            <chart:SfChart.SecondaryAxis>
+                <chart:NumericalAxis Interval="5" Header="Pass Percentage" FontSize="12" >
+                </chart:NumericalAxis>
+            </chart:SfChart.SecondaryAxis>
+            <!--Create RangeColumnSeries and bind Models property to ItemsSource-->
+            <chart:RangeColumnSeries EnableAnimation="True" ItemsSource="{Binding Models}" 
+                                     XBindingPath="DeptName" Interior="LightBlue"   
+                                     IsTransposed="True" Palette="None"                                                                                                                      
+                                     High="PassStart" Low="Pass">
+                <chart:RangeColumnSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo AdornmentsPosition="Bottom"  FontSize="10"
+                                              ShowLabel="True" 
+                                              HorizontalAlignment="Center"     
+                                              VerticalAlignment="Center">
+                    </chart:ChartAdornmentInfo>
+                </chart:RangeColumnSeries.AdornmentsInfo>
+            </chart:RangeColumnSeries>
+            <chart:RangeColumnSeries EnableAnimation="True" ItemsSource="{Binding Models}" 
+                                     IsTransposed="True" XBindingPath="DeptName"                                                                                                        
+                                     Interior="LightCoral" High="Pass" Low="PassEnd"
+                                     Palette="None" >
+                <chart:RangeColumnSeries.AdornmentsInfo>
+                    <!--To show label using ChartAdornmentInfo-->
+                    <chart:ChartAdornmentInfo AdornmentsPosition="Top"  
+                                              ShowLabel="True"  FontSize="10"
+                                              HorizontalAlignment="Center"    
+                                              VerticalAlignment="Center">
+                    </chart:ChartAdornmentInfo>
+                </chart:RangeColumnSeries.AdornmentsInfo>
+            </chart:RangeColumnSeries>
+
+        </chart:SfChart>
+    </Grid>
+</UserControl>
