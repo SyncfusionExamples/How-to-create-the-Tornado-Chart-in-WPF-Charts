@@ -1,14 +1,14 @@
-# How to create the Tornado Chart in WPF Charts?
+# How to create the Tornado Chart in WPF Charts
 
-This example explains how to create a Tornado Chart using the [Bar](https://help.syncfusion.com/wpf/charts/seriestypes/columnandbar#%22bar-chart%22) and [RangeColumn](https://help.syncfusion.com/wpf/charts/seriestypes/range#%22range-column-chart%22) Charts.
+This example explains how to create a Tornado Chart using the [Bar](https://help.syncfusion.com/wpf/charts/seriestypes/columnandbar#bar-chart) and [RangeColumn](https://help.syncfusion.com/wpf/charts/seriestypes/range#range-column-chart) Charts.
 
 Tornado Chart is a special type of bar chart where the bars extend from the defined midpoint. Two series are required for a chart to achieve Tornado Chart by the following these steps.
 
 ## Tornado Chart using the Bar Chart
 
-**Step1:** Create [Bar](https://help.syncfusion.com/wpf/charts/seriestypes/columnandbar#%22bar-chart%22) Series with Binding of  [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#%22Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource%22), [XBindingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#%22Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath%22), and [YBindingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#%22Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath%22) properties.
+**Step1:** Create [Bar](https://help.syncfusion.com/wpf/charts/seriestypes/columnandbar#bar-chart) Series with Binding of  [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource), [XBindingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath), and [YBindingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties.
 
-**Step2:** By using the [LabelTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html#%22Syncfusion_Windows_Chart_ChartAdornmentInfo_LabelTemplate%22) in [ChartAdornmentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html) class, you can display the model data in data marker as demonstrated in the following code example.
+**Step2:** By using the [LabelTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html#Syncfusion_Windows_Chart_ChartAdornmentInfo_LabelTemplate) in [ChartAdornmentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html) class, you can display the model data in data marker as demonstrated in the following code example.
 
 **XAML**
 ```
@@ -47,9 +47,9 @@ Tornado Chart is a special type of bar chart where the bars extend from the defi
 
 ## Tornado Chart using the Range Column Chart
 
-**Step1:** Create [RangeColumn](https://help.syncfusion.com/wpf/charts/seriestypes/range#%22range-column-chart%22) series with Binding of [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#%22Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource%22), [XBindingPath]()https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#%22Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath%22, and [YBindingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#%22Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath%22) properties.
+**Step1:** Create [RangeColumn](https://help.syncfusion.com/wpf/charts/seriestypes/range#range-column-chart) series with Binding of [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource), [XBindingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath), and [YBindingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties.
 
-**Step2:** By using the [LabelTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html#%22Syncfusion_Windows_Chart_ChartAdornmentInfo_LabelTemplate%22) in [ChartAdornmentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html) class, you can display the model data in data marker as demonstrated in the following code example.
+**Step2:** By using the [LabelTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html#Syncfusion_Windows_Chart_ChartAdornmentInfo_LabelTemplate) in [ChartAdornmentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.ChartAdornmentInfo.html) class, you can display the model data in data marker as demonstrated in the following code example.
 
 **XAML**
 ```
